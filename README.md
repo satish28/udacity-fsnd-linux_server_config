@@ -62,7 +62,7 @@ Login into the Lightsail box using the public key for grader and allow the follo
 Additional Info: Item_catalog app uses FB for 3rd party authorization. FB does not allow plain text authentication(http) and only allows https connections for authentication. Hence had to allow port 443 to allow proper functioning of the application.
 
 #### All applications are up-to date.
-- Run ``sudo apt-get update`` to update all the packgaes before additional packages can be installed.
+- Run ``sudo apt-get update && sudo apt-get dist-upgrade`` to update all the packgaes before additional packages can be installed.
 
 
 #### Application functionality:
