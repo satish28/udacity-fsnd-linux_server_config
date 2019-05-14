@@ -1,6 +1,3 @@
-# IP Address - 52.66.88.151
-# URL: https://52.66.88.151
-
 # Software
 1. Python2.7
 2. Apache2
@@ -101,8 +98,8 @@ Note: Before running pip run ``EXPORT LC_ALL=C``
 1. Create the following file udacity_item_catalog.conf  in /etc/apache2/sites-available. This file enables the wsgi and redirect to https.
 
 	``<VirtualHost *:80>
-		ServerName 52.66.88.151
-		ServerAdmin admin@52.66.88.151.com
+		ServerName :
+		ServerAdmin admin
 		WSGIScriptAlias / /var/www/html/udacity_item_catalog/flaskapp.wsgi
 		#WSGIDaemonProcess udacity_item_catalog python-home=/usr/local python-path=/var/www/html/udacity_item_catalog
 		#WSGIProcessGroup udacity_item_catalog
@@ -130,7 +127,7 @@ Note: Before running pip run ``EXPORT LC_ALL=C``
 ``<IfModule mod_ssl.c>
 	<VirtualHost _default_:443>
 		ServerAdmin webmaster@localhost
-		ServerName 52.66.88.151
+		ServerName 
 		DocumentRoot /var/www/html/udacity_item_catalog
 		WSGIScriptAlias / /var/www/html/udacity_item_catalog/flaskapp.wsgi
 		<Directory /var/www/html/udacity_item_catalog/>
